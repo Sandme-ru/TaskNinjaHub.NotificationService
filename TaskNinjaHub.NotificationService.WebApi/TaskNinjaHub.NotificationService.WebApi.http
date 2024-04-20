@@ -1,0 +1,6 @@
+@TaskNinjaHub.NotificationService.WebApi_HostAddress = http://localhost:5089
+
+GET {{TaskNinjaHub.NotificationService.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
