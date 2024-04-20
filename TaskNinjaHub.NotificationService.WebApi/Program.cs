@@ -1,5 +1,6 @@
 using MassTransit;
 using TaskNinjaGub.NotificationService.Application.Entities.Email.Consumer;
+using TaskNinjaHub.NotificationService.WebApi.Subdomain;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -37,7 +38,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(o =>
 {
 #if RELEASE
-    options.DocumentFilter<SubdomainRouteAttribute>();
+    o.DocumentFilter<SubdomainRouteAttribute>();
 #endif
 });
 
