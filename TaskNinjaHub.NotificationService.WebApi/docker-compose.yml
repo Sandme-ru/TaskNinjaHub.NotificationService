@@ -1,6 +1,6 @@
 version: '3'
 services:
-  storage:
+  notify:
     container_name: notify
     build:
       context: ../
